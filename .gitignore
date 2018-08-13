@@ -1,5 +1,7 @@
 # folders to ignore for confidentiality reasons
 data
+
+# other folders to ignore
 licence_info
 pdfs
 static
