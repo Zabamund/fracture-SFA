@@ -1,0 +1,6 @@
+# folders to ignore for confidentiality reasons
+data
+licence_info
+pdfs
+static
+.ipynb_checkpoints
