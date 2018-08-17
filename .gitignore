@@ -2,7 +2,8 @@
 data
 
 # other folders to ignore
-licence_info
-pdfs
-static
-.ipynb_checkpoints
+licence_info/
+pdfs/
+static/
+.ipynb_checkpoints/
+__pycache__/
