@@ -7,3 +7,4 @@ pdfs/
 static/
 .ipynb_checkpoints/
 __pycache__/
+utils.cpython-36.pyc
