@@ -2,7 +2,6 @@ import warnings
 warnings.filterwarnings("ignore", message="numpy.dtype size changed") # due a RuntimeWarning with numpy.dtype
 import pandas as pd
 import numpy as np
-import math
 
 def mdia_to_xyz_minCurve(deviation):
     """
@@ -14,10 +13,10 @@ def mdia_to_xyz_minCurve(deviation):
     data = pd.read_csv(deviation, sep=',', header='infer')
     # clean data
     data.drop(columns=['Unnamed: 0'], inplace=True)
-    #data['Dogleg [deg/30m]'].replace(np.nan, 0, inplace=True)
     # add columns needed for calculations
     data['Dogleg_rad [rad/30m]'] = np.radians(data['Dogleg [deg/30m]'])
     data['RatioFactor'] = (2 / data['Dogleg_rad [rad/30m]']) * np.tan(data['Dogleg_rad [rad/30m]'] / 2)
+    data['RatioFactor'].replace(np.nan, 1, inplace=True)
     # calculate intervals
     delta_MD = np.array(data['MD[m]'][1:]) - np.array(data['MD[m]'][:-1])
     # get uppers/lowers
