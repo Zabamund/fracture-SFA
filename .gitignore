@@ -6,7 +6,7 @@ licence_info/
 pdfs/
 static/
 .ipynb_checkpoints/
-__pycache__/
+__pycache__/ 
 *.log
 *.pot
 *.pyc
