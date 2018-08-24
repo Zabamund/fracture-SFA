@@ -14,3 +14,6 @@ __pycache__/
 */*/__pycache__/
 */__pycache__/
 utils.cpython-36.pyc
+
+#Miscellaneous
+.DS_Store
