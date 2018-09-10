@@ -5,9 +5,14 @@ import numpy as np
 
 def mdia_to_xyz_minCurve(deviation):
     """
-    A function to convert a well deviation (path of csv file) given in MD[m], incl[deg], azi[deg]
-    into an xyz array with x[m], y[m], z[m] using the minimum curvature method
-    according to: [drillingformulas.com](http://bit.ly/2MNp7U0)
+    Returns a tuple whose elements are 1D arrays corresponding to the sequences x, y, and tvd_z values
+    from a well path deviation file (csv) with columns MD[m], incl[m], azi[deg].
+    Uses the minimum curvature method, [drillingformulas.com](http://bit.ly/2MNp7U0)
+
+    Args:
+        str. The path to the deviation file (csv format)
+    Returns:
+        tuple. 3-elements of x, y, and tvd_z points.
     """
     # read data
     data = pd.read_csv(deviation, sep=',', header='infer')
