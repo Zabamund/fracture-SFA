@@ -23,3 +23,7 @@ utils.cpython-36.pyc
 #Miscellaneous
 .DS_Store
 SFA_demo.mov
+notebooks/__pycache__/
+*/*/*/__pycache__/
+*/*/__pycache__/
+*/__pycache__/
