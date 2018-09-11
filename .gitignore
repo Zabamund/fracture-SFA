@@ -2,9 +2,7 @@
 data/HEF_image_interp
 data/wellOpsData
 test_well.las
-data/cleanedData/image_data.csv
 data/cleanedData/survey_info.csv
-data/cleanedData/tops.csv
 
 # other folders to ignore
 licence_info/
