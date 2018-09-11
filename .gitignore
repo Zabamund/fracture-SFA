@@ -1,6 +1,19 @@
 # folders to ignore for confidentiality reasons
 data/HEF_image_interp
-data/wellOpsData
+data/wellOpsData/test_well.las
+data/wellOpsData/Subsurface/Log\ data
+data/wellOpsData/Subsurface/Mud\ Logging
+data/wellOpsData/Subsurface/Strip\ Logs
+data/wellOpsData/Subsurface/Surveys
+data/wellOpsData/Subsurface/00_StaticFractureAnalysis_V1.2.xlsx
+data/wellOpsData/Subsurface/FracIntensityDD11.xlsx
+data/wellOpsData/Subsurface/WellTops\ -\ OryxRef.xlsx
+
+data/wellOpsData/Subsurface/Petrophysics/DD-11 Sumandavs_20141212.xls
+data/wellOpsData/Subsurface/Petrophysics/DD-11_CPI_1000mMD_20150126.jpg
+data/wellOpsData/Subsurface/Petrophysics/DD-11_CPI_20150126.las
+data/wellOpsData/Subsurface/Petrophysics/Thumbs.db
+
 test_well.las
 data/cleanedData/survey_info.csv
 
